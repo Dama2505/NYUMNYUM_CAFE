@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Protest Strike", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: #EFD6D6;
+    font-family: "Nerko One", cursive;
+    color: #333;
+    padding: 12px 18px;  /* Increased padding */
+    border-radius: 8px;
+    transition: all 0.3s ease; /* Enhanced transition */
+}
+
+button:hover {
+    background-color: #FFB100;
+    color: white;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    padding-top: 100px;
+}
+
+/* Header Styling */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white !important; /* Ensures this rule is applied */
+    padding: 5px 20px;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Center the h1 header */
+header h1 {
+    color: darkslategray;
+    font-size: 3rem; /* Reduced font size */
+    font-family: "Nerko One", cursive;
+    text-align: center; /* Center the text horizontally */
+    margin: 0 auto; /* Ensures it is centered */
+    line-height: 1.2; /* Adjusts spacing between lines if there's wrapping */
+}
+
+/* Logo styling (if applicable) */
+.logo {
+    width: 60px; /* Reduced logo size */
+    height: auto;
+    border-radius: 50%;
+    margin: 5px; /* Reduced margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	background-color: sandybrown;
+    padding: 5px 10px; /* Reduced padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Menu Container */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Spacing between images */
+    padding: 40px 20px;
+    background-image: url('BACKGROUND MENU.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Removed the dimming effect */
+.menu-container::before {
+    content: none; /* Removed dim effect */
+}
+
+.menu-container .menu-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #DFC07F; /* Border around each item */
+}
+
+.menu-container .menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-container .menu-item img {
+    width: 150px; /* Reduced width for a smaller box */
+    height: 120px; /* Reduced height for a smaller box */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Space between image and text */
+    transition: transform 0.3s ease;
+}
+
+.menu-container .menu-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Menu Item Text Styling */
+.menu-container .menu-item h3 {
+    margin: 10px 0;
+    font-size: 1.3em;
+    color: darkslategray;
+    font-family: "Nerko One", cursive;
+}
+
+.menu-container .menu-item p {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+
+/* Menu Navigation */
+.menu-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.menu-nav a {
+    color: maroon;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.menu-nav a:hover {
+    background-color: #FFB100;
+    color: white;
+}
+
+/* Cart Section Styling */
+.cart {
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: #DFC07F;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart button {
+    padding: 12px 22px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart button:hover {
+    background-color: #c9302c;
+}
+
+.order-confirmation a button {
+    background-color: #008CBA;
+    color: white;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.order-confirmation a button:hover {
+    background-color: #007bb5;
+}
+
+#cart-total {
+            display: inline-block; /* Makes it behave like a box */
+            background-color: #4CAF50; /* Green background */
+            color: black; /* White text */
+            padding: 10px 20px; /* Adds space inside the box */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Font size */
+            font-weight: bold; /* Bold text */
+            text-align: center; /* Center-align the text */
+            cursor: pointer; /* Pointer cursor on hover */
+            border: 2px solid #2e7d32; /* Optional border */
+        }
+
+        /* Optional hover effect */
+        #cart-total:hover {
+            background-color: #45a049; /* Slightly lighter green on hover */
+            border-color: #1b5e20; /* Darker border on hover */
+        }
+
+.cart a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-color: darkslategray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cart a:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.cart-cancel {
+    padding: 10px 15px;
+    background-color: #e74c3c; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.cart-cancel:hover {
+    background-color: #c0392b; /* Darker red */
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+    .logo {
+        width: 50px; /* Adjust logo size */
+    }
+    header {
+        padding: 5px 10px; /* Reduce padding further */
+    }
+}

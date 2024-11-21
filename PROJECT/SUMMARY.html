@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation | Nyum Nyum Cafe</title>
+    <link rel="stylesheet" href="SUMMARYstyle.css">
+    <script src="cartItem.js" defer></script>
+    <script src="Cart.js" defer></script>
+    
+</head>
+<body>
+    <!-- Page Header -->
+    <header>
+        <div class="navbar">
+            <a href="WEB2.html">
+                <img src="LOGO.png" alt="Nyum Nyum Cafe Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="WEB2.html">Home</a></li>
+                    <li><a href="MENU.html">Menu</a></li>
+                    <li><a href="CONTACT.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="order-confirmation">
+            <h1>Order Confirmation</h1>
+            <h2>Thank You for Your Reservation!</h2>
+            <p>We’re preparing your meal and will notify you once it’s ready for pickup or delivery.</p>
+
+            <!-- Booking Details -->
+            <h3><em>Booking Details</em></h3>
+            <div id="bookingDetails"></div>
+            <p id="bookingName">Name: N/A</p>
+            <p id="bookingPhone">Phone: N/A</p>
+            <p id="bookingDate">Arrival Date: N/A</p>
+            <p id="bookingTime">Arrival Time: N/A</p>
+            <p id="bookingPeople">Number of People: N/A</p>
+
+            <!-- Order Summary -->
+            <h3>Order Summary</h3>
+            <ul id="cartItems"></ul>
+    <p><strong>Total: <span id="cartTotal">RM0.00</span></strong></p>
+
+            <h3>Your Order Status: <span>Being Prepared</span></h3>
+            <p>Estimated ready time: 30 minutes</p>
+
+            <!-- QR Code Section -->
+            <div class="qr-section">
+                <h3>Scan This QR Code</h3>
+                <div id="qrCode"></div>
+				<img src="qr.jpg" alt="QR Code" class="qr-image">
+            </div>
+
+            <!-- Proof of Payment Section -->
+            <section class="proof-of-payment">
+               
+                <a href="https://wa.me/60193250513 text=Hello,%20I%20would%20like%20to%20inquire%20about%20my%20order." target="_blank">
+    <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; font-size:16px;">
+        <img src="whatsapp.png" alt="WhatsApp" style="width:20px; margin-right:10px; vertical-align:middle;">
+        Confirm order Via Whatsapp
+    </button>
+</a>
+
+            </section>
+
+            <!-- Social Sharing Section -->
+            <div class="social-share">
+                <p>Share your experience:</p>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="facebook.png" alt="Share on Facebook" class="social-icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="INSTAGRAM.jpg" alt="Share on Instagram" class="social-icon">
+                </a>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p>For any queries, contact us at:</p>
+                <p>Email: NyumNyumCafe@Mail.com | Phone: +06-6020116</p>
+            </div>
+
+            <!-- Back to Menu Button -->
+            <button onclick="window.location.href='MENU.html'">Back to Menu</button>
+        </section>
+    </main>
+</body>
+</html>

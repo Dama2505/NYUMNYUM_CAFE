@@ -1,0 +1,149 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Nerko One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('sumarry.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+}
+
+/* Header Styling */
+header {
+    background-color: transparent;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: darkseagreen;
+    transform: scale(1.1);
+}
+
+/* Logo Styling */
+.logo {
+    width: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Order Confirmation Styling */
+.order-confirmation {
+    padding: 30px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: left;
+}
+
+.order-confirmation h2, h3 {
+    color: darkgreen;
+    margin-bottom: 20px;
+}
+
+.order-details {
+    list-style: none;
+    padding: 0;
+}
+
+.order-details li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.order-details li:last-child {
+    border-bottom: none;
+}
+
+/* Social Share Styling */
+.social-share {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #575757;
+    transform: scale(1.05);
+}
+/* Styling the WhatsApp Button */
+.whatsapp-button {
+    background-color: #25D366;  /* WhatsApp Green */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center; /* Aligns text and icon */
+    justify-content: center;
+    width: auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Remove underline */
+    max-width: 250px; /* Limit the width */
+    margin: 20px auto; /* Centering button */
+}
+
+/* Styling the WhatsApp Icon inside the button */
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle; /* Aligns icon with text */
+}
+
+/* WhatsApp Button Hover Effect */
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}

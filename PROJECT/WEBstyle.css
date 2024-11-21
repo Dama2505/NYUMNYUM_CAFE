@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #2c3e50; /* Dark background for better contrast */
+    color: #f5f5f5;
+}
+
+/* Header Section */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    height: 80px;
+    width: auto;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin: 0 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #f1c40f; /* Gold hover color */
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('FRONTPAGE.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+}
+
+.banner-content {
+    max-width: 700px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-family: 'Protest Strike', sans-serif;
+}
+
+.banner p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.banner button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.banner button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Opening Hours and Booking Section */
+.opening-hours {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color:darkslategrey; /* Green background */
+    color: #f5f5f5; /* Mint cream font */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.hours, .booking {
+    width: 45%;
+    text-align: center;
+}
+
+.hours h3, .booking h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.hours p, .booking p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking input, .booking button {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking button:hover {
+    background-color: #555;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Nerko One', sans-serif;
+}
+
+.about p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.about button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Menu Section */
+.menu {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.menu h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Protest Strike', sans-serif;
+}
+
+.menu-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #d9534f; /* Button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #c9302c; /* Darker shade on hover */
+}
+
+/* Footer Section */
+footer {
+    background-color: aliceblue;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+/* Hover Effects for Links */
+.navbar nav ul li a:hover,
+.about button:hover {
+    background-color: #f1c40f;
+    color: #fff;
+}
+
+
